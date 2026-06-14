@@ -40,6 +40,12 @@ Works across **Codex**, **Claude Code**, **Cursor**, **OpenCode**, **Gemini**, *
 
 ECC v2.0.0 adds the public Hermes operator story on top of that reusable layer: start with the [Hermes setup guide](docs/HERMES-SETUP.md), then review the [2.0.0 release notes](docs/releases/2.0.0/release-notes.md) and [cross-harness architecture](docs/architecture/cross-harness.md).
 
+## Karim Customization Test
+
+This fork is being prepared as Karim's customized ECC workspace for AI automation, e-commerce systems, and multi-agent development experiments.
+
+Status: Codex connection test active.
+
 ---
 
 <table>
