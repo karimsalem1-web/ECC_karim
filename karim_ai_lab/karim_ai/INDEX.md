@@ -1,6 +1,6 @@
 # Karim AI Index
 
-Current phase: Asset 1 — Cross-agent entry strategy.
+Current phase: Asset 2 — Core operating rules in progress.
 
 Available files:
 - `../AGENTS.md` - future universal adapter
