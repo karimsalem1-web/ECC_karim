@@ -10,11 +10,11 @@ Use this file to choose the correct guidance layer before working.
 ## Current Status
 
 Asset 1 - Cross-agent entry strategy: complete.  
-Asset 2 - Core rules layer: complete.
+Asset 2 - Core rules layer: complete.  
+Asset 3 - Project memory system skeleton: complete.
 
 Future assets will add:
 
-- project memory system
 - skills system
 - workflows
 - templates
@@ -89,6 +89,40 @@ Technical rules answer:
 
 How should the agent code safely in this area?
 
+## Project Memory
+
+Folder:
+
+```text
+memory/
+```
+
+Read:
+
+```text
+memory/INDEX.md
+```
+
+Use this layer for:
+
+- project-specific context
+- stable summary
+- completed work
+- area-specific memory
+- project-specific architecture notes
+- project-specific database notes
+- project-specific frontend/backend/API notes
+- project-specific integrations, AI, and business logic notes
+
+Memory answers:
+
+What is true about this specific project?
+
+Memory does not replace rules.
+
+Rules tell the agent how to behave.
+Memory tells the agent what happened or what is true in this project.
+
 ## Current Active Tree
 
 ```text
@@ -115,6 +149,23 @@ karim_ai/
     api_routes.md
     naming.md
     environment.md
+
+  memory/
+    INDEX.md
+    summary.md
+    done.md
+
+    by_area/
+      architecture.md
+      security.md
+      database.md
+      backend.md
+      api_routes.md
+      frontend.md
+      environment.md
+      integrations.md
+      ai.md
+      business_logic.md
 ```
 
 ## Planned Future Tree
@@ -124,7 +175,6 @@ The tree may evolve slightly according to the needs of each project.
 Planned future sections:
 
 ```text
-memory/
 skills/
 workflows/
 context/
@@ -149,6 +199,7 @@ Use this pattern:
 7. Plan.
 8. Check approval gates.
 9. Implement only the allowed scope.
+10. Update memory when relevant.
 
 ## Common Routing Examples
 
@@ -156,6 +207,12 @@ Frontend task:
 
 ```text
 START_HERE.md -> INDEX.md -> rules/INDEX.md -> rules/frontend.md
+```
+
+Frontend task with project memory:
+
+```text
+START_HERE.md -> INDEX.md -> rules/INDEX.md -> rules/frontend.md -> memory/INDEX.md -> memory/by_area/frontend.md
 ```
 
 Backend task:
@@ -188,6 +245,12 @@ Architecture or refactor task:
 START_HERE.md -> INDEX.md -> core/approval_gates.md -> rules/architecture.md -> relevant technical rule file
 ```
 
+Project memory task:
+
+```text
+START_HERE.md -> INDEX.md -> memory/INDEX.md -> relevant memory file
+```
+
 ## Important Restrictions
 
 Do not modify original ECC files outside `karim_ai_lab` unless Karim explicitly approves it.
@@ -196,6 +259,6 @@ Do not create unnecessary files.
 
 Do not load unnecessary context.
 
-Do not assume missing schemas, routes, APIs, environment variables, or business rules.
+Do not assume missing schemas, routes, APIs, environment variables, business rules, or project memory.
 
 If unclear, stop and ask Karim.

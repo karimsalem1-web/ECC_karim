@@ -20,7 +20,8 @@ Same mission, same rules, same memory, same workflows, same skills, and same pro
 ## Current Status
 
 Asset 1 - Cross-agent entry strategy: complete.  
-Asset 2 - Core rules layer: complete.
+Asset 2 - Core rules layer: complete.  
+Asset 3 - Project memory system skeleton: complete.
 
 The active lab folder is:
 
@@ -44,26 +45,20 @@ The system now includes:
 - main index
 - core operating rules
 - technical rules layer
+- project memory system skeleton
 
-The technical rules layer includes:
+The active guidance layers are:
 
 ```text
+karim_ai/core/
 karim_ai/rules/
-  architecture.md
-  security.md
-  database.md
-  frontend.md
-  backend.md
-  api_routes.md
-  naming.md
-  environment.md
+karim_ai/memory/
 ```
 
 ## What Comes Later
 
 Future assets will add:
 
-- project memory system
 - skills system
 - workflows
 - templates

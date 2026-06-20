@@ -8,7 +8,7 @@ Its purpose is to give Codex, Claude, Antigravity, Kilo Code, and future coding 
 - entry instructions
 - core operating rules
 - technical rules
-- future project memory
+- project memory
 - future skills
 - future workflows
 - future templates
@@ -16,7 +16,8 @@ Its purpose is to give Codex, Claude, Antigravity, Kilo Code, and future coding 
 ## Current Status
 
 Asset 1 - Cross-agent entry strategy: complete.  
-Asset 2 - Core rules layer: complete.
+Asset 2 - Core rules layer: complete.  
+Asset 3 - Project memory system skeleton: complete.
 
 Current working folder:
 
@@ -32,7 +33,6 @@ Build and test the clean lab first.
 
 Then later:
 
-- Add the project memory system.
 - Add skills.
 - Add workflows.
 - Add templates.
@@ -56,6 +56,20 @@ All entry files should point back to:
 
 - `karim_ai/START_HERE.md`
 - `karim_ai/INDEX.md`
+
+## Active Guidance Layers
+
+Current active layers:
+
+- `karim_ai/core/`
+- `karim_ai/rules/`
+- `karim_ai/memory/`
+
+Use indexes to avoid loading unnecessary files:
+
+- `karim_ai/core/INDEX.md`
+- `karim_ai/rules/INDEX.md`
+- `karim_ai/memory/INDEX.md`
 
 ## Important Rule
 

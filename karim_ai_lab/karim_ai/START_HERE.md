@@ -14,7 +14,8 @@ Karim AI Lab is designed to help coding agents start from the same source of tru
 6. Plan before implementation.
 7. Check approval gates.
 8. Edit only the approved scope.
-9. Summarize changes clearly.
+9. Update memory when relevant.
+10. Summarize changes clearly.
 
 ## What to Read Next
 
@@ -28,7 +29,7 @@ Then choose the correct layer:
 
 - For operating behavior, read `core/INDEX.md`.
 - For technical coding rules, read `rules/INDEX.md`.
-- For future project memory, read the memory index once it exists.
+- For project-specific memory, read `memory/INDEX.md`.
 - For future skills, read the skills index once it exists.
 - For future workflows, read the workflows index once it exists.
 
@@ -53,6 +54,8 @@ START_HERE.md
 -> INDEX.md
 -> rules/INDEX.md
 -> rules/frontend.md
+-> memory/INDEX.md if project memory is needed
+-> memory/by_area/frontend.md if frontend memory is relevant
 -> affected frontend files
 ```
 
@@ -64,6 +67,8 @@ START_HERE.md
 -> rules/INDEX.md
 -> rules/backend.md
 -> rules/database.md
+-> memory/INDEX.md if project memory is needed
+-> relevant memory/by_area files
 -> affected backend/database files
 ```
 
@@ -81,12 +86,14 @@ Do not assume missing:
 - security policies
 - customer flows
 - billing or credit behavior
+- project memory
 
 If unclear, ask Karim before editing.
 
 ## Current Asset Status
 
 Asset 1 - Cross-agent entry strategy: complete.  
-Asset 2 - Core rules layer: complete.
+Asset 2 - Core rules layer: complete.  
+Asset 3 - Project memory system skeleton: complete.
 
-Future assets will add memory, skills, workflows, templates, and ECC extraction/cleanup.
+Future assets will add skills, workflows, templates, and ECC extraction/cleanup.
