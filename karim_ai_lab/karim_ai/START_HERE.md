@@ -31,13 +31,19 @@ Then choose the correct layer:
 - For technical coding rules, read `rules/INDEX.md`.
 - For project-specific memory, read `memory/INDEX.md`.
 - For optional execution playbooks, read `skills/INDEX.md`.
+- For workflows, read `workflows/INDEX.md`.
 - For AI/LLM work, read `skills/ai_llm/INDEX.md`.
 - For docs/help/guide work, read `skills/product_docs/INDEX.md`.
 - For MCP work, read `skills/mcp_tooling/INDEX.md`.
-- For future workflows, read the workflows index once it exists.
 
 Skills are optional execution playbooks, not mandatory rules.
+Workflows are step-by-step task processes.
+Use workflows only when the task needs a process.
+Tiny safe edits may not need workflows.
 Rules override skills when they conflict.
+Rules override workflows when they conflict.
+Skills provide expertise; workflows provide process.
+Memory stores project truth.
 
 ## Token Optimization
 
@@ -131,6 +137,44 @@ START_HERE.md
 -> mcp_tooling/mcp_server_patterns.md
 ```
 
+Planning / non-trivial implementation task:
+
+```text
+START_HERE.md
+-> INDEX.md
+-> workflows/INDEX.md
+-> workflows/planning_workflow.md
+-> rules/INDEX.md
+-> relevant rule files
+-> memory/INDEX.md if project context is needed
+-> relevant memory files
+-> skills/INDEX.md if execution playbook is useful
+-> relevant skill files
+-> affected project files
+```
+
+Build/debug task:
+
+```text
+START_HERE.md
+-> INDEX.md
+-> workflows/INDEX.md
+-> workflows/build_fix_workflow.md
+-> rules/INDEX.md
+-> relevant rule files
+-> skills/core_development/testing_verification.md
+-> affected project files
+```
+
+Tiny safe edit:
+
+```text
+START_HERE.md
+-> INDEX.md
+-> relevant rule file if needed
+-> affected file
+```
+
 ## Do Not Assume
 
 Do not assume missing:
@@ -156,6 +200,7 @@ Asset 1 - Cross-agent entry strategy: complete.
 Asset 2 - Core rules layer: complete.  
 Asset 3 - Project memory system skeleton: complete.  
 Asset 4 - Core Development Skills: complete.  
-Asset 5 - Initial Specialized Skills: complete.
+Asset 5 - Initial Specialized Skills: complete.  
+Asset 6 - Workflows: complete.
 
-Future assets will add workflows, templates, and ECC extraction/cleanup.
+Future assets will add templates, ECC extraction/cleanup, final promotion/rename strategy, and optional future workflows only when needed.

@@ -10,7 +10,7 @@ Its purpose is to give Codex, Claude, Antigravity, Kilo Code, and future coding 
 - technical rules
 - project memory
 - skills
-- future workflows
+- workflows
 - future templates
 
 ## Current Status
@@ -19,7 +19,8 @@ Asset 1 - Cross-agent entry strategy: complete.
 Asset 2 - Core rules layer: complete.  
 Asset 3 - Project memory system skeleton: complete.  
 Asset 4 - Core Development Skills: complete.  
-Asset 5 - Initial Specialized Skills: complete.
+Asset 5 - Initial Specialized Skills: complete.  
+Asset 6 - Workflows: complete.
 
 Current working folder:
 
@@ -35,7 +36,6 @@ Build and test the clean lab first.
 
 Then later:
 
-- Add workflows.
 - Add templates.
 - Audit original ECC.
 - Keep useful ideas.
@@ -43,6 +43,7 @@ Then later:
 - Promote the final clean system.
 - Archive old ECC files before deleting anything.
 - Add optional future specialized skills only when needed.
+- Add optional future workflows only when needed.
 
 ## Agent Entry Files
 
@@ -67,6 +68,7 @@ Current active layers:
 - `karim_ai/rules/`
 - `karim_ai/memory/`
 - `karim_ai/skills/`
+- `karim_ai/workflows/`
 
 Use indexes to avoid loading unnecessary files:
 
@@ -74,10 +76,14 @@ Use indexes to avoid loading unnecessary files:
 - `karim_ai/rules/INDEX.md`
 - `karim_ai/memory/INDEX.md`
 - `karim_ai/skills/INDEX.md`
+- `karim_ai/workflows/INDEX.md`
 
 Skills are optional execution playbooks, not mandatory rules.
 Rules override skills when they conflict.
 Memory is project truth; skills are execution guidance.
+Workflows are step-by-step task processes.
+Workflows are not loaded for every task; use them only when the task needs a process.
+Rules override workflows when they conflict.
 
 Active skill sections:
 
@@ -89,6 +95,14 @@ karim_ai/skills/mcp_tooling/
 ```
 
 Future specialized skill sections should only be added when needed.
+
+Active workflow files:
+
+```text
+karim_ai/workflows/INDEX.md
+karim_ai/workflows/planning_workflow.md
+karim_ai/workflows/build_fix_workflow.md
+```
 
 ## Important Rule
 

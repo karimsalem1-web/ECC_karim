@@ -13,14 +13,15 @@ Asset 1 - Cross-agent entry strategy: complete.
 Asset 2 - Core rules layer: complete.  
 Asset 3 - Project memory system skeleton: complete.  
 Asset 4 - Core Development Skills: complete.  
-Asset 5 - Initial Specialized Skills: complete.
+Asset 5 - Initial Specialized Skills: complete.  
+Asset 6 - Workflows: complete.
 
 Future assets will add:
 
-- workflows
 - templates
 - ECC extraction and cleanup
 - optional future specialized skills only when needed
+- optional future workflows only when needed
 
 ## Main Files
 
@@ -173,6 +174,38 @@ Skills answer:
 
 How should the agent do this kind of work well?
 
+## Workflows
+
+Folder:
+
+```text
+workflows/
+```
+
+Read:
+
+```text
+workflows/INDEX.md
+```
+
+Use this layer only when the task needs a step-by-step process.
+
+Active workflow files:
+
+- `workflows/INDEX.md`
+- `workflows/planning_workflow.md`
+- `workflows/build_fix_workflow.md`
+
+Workflows are not loaded for every task.
+Tiny safe edits may not need a workflow.
+Rules override workflows when they conflict.
+Skills provide expertise; workflows provide process.
+Memory stores project truth.
+
+Workflows answer:
+
+What process should the agent follow from start to finish for this task type?
+
 ## Current Active Tree
 
 ```text
@@ -243,6 +276,11 @@ karim_ai/
     mcp_tooling/
       INDEX.md
       mcp_server_patterns.md
+
+  workflows/
+    INDEX.md
+    planning_workflow.md
+    build_fix_workflow.md
 ```
 
 ## Planned Future Tree
@@ -252,12 +290,12 @@ The tree may evolve slightly according to the needs of each project.
 Planned future sections:
 
 ```text
-workflows/
 context/
 templates/
 ```
 
 Optional future specialized skill sections may be added only when needed.
+Optional future workflows may be added only when needed.
 
 The tree is a working blueprint, not a prison.
 Small structure changes are allowed when they improve clarity, reduce noise, or match the project situation.
@@ -333,6 +371,24 @@ Core development skill-supported task:
 
 ```text
 START_HERE.md -> INDEX.md -> rules/INDEX.md -> relevant rule files -> skills/INDEX.md -> skills/core_development/INDEX.md -> one relevant core development skill file
+```
+
+Planning workflow:
+
+```text
+START_HERE.md -> INDEX.md -> workflows/INDEX.md -> workflows/planning_workflow.md -> rules/INDEX.md -> relevant rule files -> memory/INDEX.md if project context is needed -> relevant memory files -> skills/INDEX.md if execution playbook is useful -> relevant skill files -> affected project files
+```
+
+Build fix workflow:
+
+```text
+START_HERE.md -> INDEX.md -> workflows/INDEX.md -> workflows/build_fix_workflow.md -> rules/INDEX.md -> relevant rule files -> skills/core_development/testing_verification.md -> affected project files
+```
+
+Tiny safe edit with no workflow:
+
+```text
+START_HERE.md -> INDEX.md -> relevant rule file if needed -> affected file
 ```
 
 AI/LLM task:

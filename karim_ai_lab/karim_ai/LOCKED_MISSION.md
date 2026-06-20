@@ -23,7 +23,8 @@ Asset 1 - Cross-agent entry strategy: complete.
 Asset 2 - Core rules layer: complete.  
 Asset 3 - Project memory system skeleton: complete.  
 Asset 4 - Core Development Skills: complete.  
-Asset 5 - Initial Specialized Skills: complete.
+Asset 5 - Initial Specialized Skills: complete.  
+Asset 6 - Workflows: complete.
 
 The active lab folder is:
 
@@ -50,6 +51,7 @@ The system now includes:
 - project memory system skeleton
 - core development skills system
 - initial specialized skills
+- workflows
 
 The active guidance layers are:
 
@@ -58,6 +60,7 @@ karim_ai/core/
 karim_ai/rules/
 karim_ai/memory/
 karim_ai/skills/
+karim_ai/workflows/
 ```
 
 The active skill sections are:
@@ -69,15 +72,29 @@ karim_ai/skills/product_docs/
 karim_ai/skills/mcp_tooling/
 ```
 
+The active workflow files are:
+
+```text
+karim_ai/workflows/INDEX.md
+karim_ai/workflows/planning_workflow.md
+karim_ai/workflows/build_fix_workflow.md
+```
+
+Workflows are step-by-step task processes.
+They are used only when the task needs a process.
+Rules override workflows when they conflict.
+Skills provide expertise; workflows provide process.
+Memory stores project truth.
+
 ## What Comes Later
 
 Future assets will add:
 
-- workflows
 - templates
 - ECC extraction and cleanup
 - final promotion/rename strategy
 - optional future specialized skills when needed
+- optional future workflows only when needed
 
 ## Non-Negotiable Strategy
 
