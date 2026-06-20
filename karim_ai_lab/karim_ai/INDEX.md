@@ -290,7 +290,6 @@ The tree may evolve slightly according to the needs of each project.
 Planned future sections:
 
 ```text
-context/
 templates/
 ```
 
