@@ -11,11 +11,12 @@ Use this file to choose the correct guidance layer before working.
 
 Asset 1 - Cross-agent entry strategy: complete.  
 Asset 2 - Core rules layer: complete.  
-Asset 3 - Project memory system skeleton: complete.
+Asset 3 - Project memory system skeleton: complete.  
+Asset 4 - Core Development Skills: complete.
 
 Future assets will add:
 
-- skills system
+- specialized AI / RAG / automation / Shopify / content skills
 - workflows
 - templates
 - ECC extraction and cleanup
@@ -123,6 +124,45 @@ Memory does not replace rules.
 Rules tell the agent how to behave.
 Memory tells the agent what happened or what is true in this project.
 
+## Skills
+
+Folder:
+
+```text
+skills/
+```
+
+Read:
+
+```text
+skills/INDEX.md
+```
+
+Use this layer for optional execution playbooks.
+
+Skills are not mandatory rules.
+Use skills only when the task benefits from specialized execution guidance.
+
+Active skills section:
+
+```text
+skills/core_development/
+```
+
+The 7 active core development skills are:
+
+- `backend_service_patterns.md`
+- `frontend_ui_patterns.md`
+- `api_design.md`
+- `database_migrations.md`
+- `security_review.md`
+- `testing_verification.md`
+- `deployment_ops.md`
+
+Skills answer:
+
+How should the agent do this kind of work well?
+
 ## Current Active Tree
 
 ```text
@@ -166,6 +206,19 @@ karim_ai/
       integrations.md
       ai.md
       business_logic.md
+
+  skills/
+    INDEX.md
+
+    core_development/
+      INDEX.md
+      backend_service_patterns.md
+      frontend_ui_patterns.md
+      api_design.md
+      database_migrations.md
+      security_review.md
+      testing_verification.md
+      deployment_ops.md
 ```
 
 ## Planned Future Tree
@@ -175,10 +228,20 @@ The tree may evolve slightly according to the needs of each project.
 Planned future sections:
 
 ```text
-skills/
 workflows/
 context/
 templates/
+```
+
+Future specialized skill sections may include:
+
+```text
+AI / LLM / RAG
+automation
+Shopify / e-commerce
+content / research
+marketing
+data / analytics
 ```
 
 The tree is a working blueprint, not a prison.
@@ -251,6 +314,24 @@ Project memory task:
 START_HERE.md -> INDEX.md -> memory/INDEX.md -> relevant memory file
 ```
 
+Skill-supported task:
+
+```text
+START_HERE.md -> INDEX.md -> rules/INDEX.md -> relevant rule files -> skills/INDEX.md -> skills/core_development/INDEX.md -> one relevant skill file
+```
+
+Testing or verification task:
+
+```text
+START_HERE.md -> INDEX.md -> rules/INDEX.md -> relevant rule files -> skills/INDEX.md -> skills/core_development/testing_verification.md
+```
+
+Deployment readiness task:
+
+```text
+START_HERE.md -> INDEX.md -> rules/INDEX.md -> rules/environment.md -> skills/INDEX.md -> skills/core_development/deployment_ops.md
+```
+
 ## Important Restrictions
 
 Do not modify original ECC files outside `karim_ai_lab` unless Karim explicitly approves it.
@@ -259,6 +340,8 @@ Do not create unnecessary files.
 
 Do not load unnecessary context.
 
-Do not assume missing schemas, routes, APIs, environment variables, business rules, or project memory.
+Do not load all skills by default.
+
+Do not assume missing schemas, routes, APIs, environment variables, business rules, project memory, or specialized skills.
 
 If unclear, stop and ask Karim.

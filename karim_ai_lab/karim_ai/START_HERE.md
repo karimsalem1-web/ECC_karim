@@ -30,8 +30,10 @@ Then choose the correct layer:
 - For operating behavior, read `core/INDEX.md`.
 - For technical coding rules, read `rules/INDEX.md`.
 - For project-specific memory, read `memory/INDEX.md`.
-- For future skills, read the skills index once it exists.
+- For optional execution playbooks, read `skills/INDEX.md`.
 - For future workflows, read the workflows index once it exists.
+
+Skills are optional execution playbooks, not mandatory rules.
 
 ## Token Optimization
 
@@ -72,6 +74,22 @@ START_HERE.md
 -> affected backend/database files
 ```
 
+Example for a task that uses skills:
+
+```text
+START_HERE.md
+-> INDEX.md
+-> rules/INDEX.md
+-> relevant rule files
+-> memory/INDEX.md if project memory is needed
+-> skills/INDEX.md
+-> skills/core_development/INDEX.md
+-> one relevant skill file
+-> task files
+```
+
+Do not load all skills by default.
+
 ## Do Not Assume
 
 Do not assume missing:
@@ -87,6 +105,7 @@ Do not assume missing:
 - customer flows
 - billing or credit behavior
 - project memory
+- specialized skills
 
 If unclear, ask Karim before editing.
 
@@ -94,6 +113,7 @@ If unclear, ask Karim before editing.
 
 Asset 1 - Cross-agent entry strategy: complete.  
 Asset 2 - Core rules layer: complete.  
-Asset 3 - Project memory system skeleton: complete.
+Asset 3 - Project memory system skeleton: complete.  
+Asset 4 - Core Development Skills: complete.
 
-Future assets will add skills, workflows, templates, and ECC extraction/cleanup.
+Future assets will add specialized skills, workflows, templates, and ECC extraction/cleanup.

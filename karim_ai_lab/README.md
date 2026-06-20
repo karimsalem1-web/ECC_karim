@@ -9,7 +9,7 @@ Its purpose is to give Codex, Claude, Antigravity, Kilo Code, and future coding 
 - core operating rules
 - technical rules
 - project memory
-- future skills
+- skills
 - future workflows
 - future templates
 
@@ -17,7 +17,8 @@ Its purpose is to give Codex, Claude, Antigravity, Kilo Code, and future coding 
 
 Asset 1 - Cross-agent entry strategy: complete.  
 Asset 2 - Core rules layer: complete.  
-Asset 3 - Project memory system skeleton: complete.
+Asset 3 - Project memory system skeleton: complete.  
+Asset 4 - Core Development Skills: complete.
 
 Current working folder:
 
@@ -33,7 +34,7 @@ Build and test the clean lab first.
 
 Then later:
 
-- Add skills.
+- Add specialized AI / RAG / automation / Shopify / content skills.
 - Add workflows.
 - Add templates.
 - Audit original ECC.
@@ -64,12 +65,22 @@ Current active layers:
 - `karim_ai/core/`
 - `karim_ai/rules/`
 - `karim_ai/memory/`
+- `karim_ai/skills/`
 
 Use indexes to avoid loading unnecessary files:
 
 - `karim_ai/core/INDEX.md`
 - `karim_ai/rules/INDEX.md`
 - `karim_ai/memory/INDEX.md`
+- `karim_ai/skills/INDEX.md`
+
+Skills are optional execution playbooks, not mandatory rules.
+
+Active skills section:
+
+```text
+karim_ai/skills/core_development/
+```
 
 ## Important Rule
 
