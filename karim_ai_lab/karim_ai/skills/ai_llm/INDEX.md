@@ -11,12 +11,7 @@ Current active files:
 
 - `deterministic_vs_llm.md`
 - `llm_cost_optimization.md`
-
-Planned but not created yet:
-
 - `rag_retrieval_patterns.md`
-
-Do not create planned files unless Karim approves.
 
 ## How to Use These Skills
 
@@ -54,6 +49,7 @@ Choose only the relevant file:
 
 - Use `deterministic_vs_llm.md` for parsing, extraction, classification, and deterministic-vs-model decisions.
 - Use `llm_cost_optimization.md` for model routing, token budgets, caching, retries, provider failures, and cost control.
+- Use `rag_retrieval_patterns.md` for RAG, vector search, semantic retrieval, context loading, source-grounded answers, and retrieval design.
 
 ## Stop Conditions
 
