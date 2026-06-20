@@ -160,6 +160,23 @@ Stop and ask Karim if:
 
 ## Output Expectations
 
+Build fix reports should be short by default.
+
+Do not write a long debug report unless validation fails, the root cause is complex, Karim asks for details, unresolved issues remain, or the task touches security, database, auth, RLS, billing, credits, payments, deployment, or customer data.
+
+The default build fix report should be practical and compact:
+
+```markdown
+## Short Build Fix Report
+
+- Error:
+- Root cause:
+- Files changed:
+- Fix:
+- Verification:
+- Remaining issue:
+```
+
 When build fix work is complete, report:
 
 - failing command

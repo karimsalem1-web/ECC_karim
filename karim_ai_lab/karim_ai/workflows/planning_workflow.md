@@ -199,6 +199,25 @@ Stop and ask Karim if:
 
 ## Output Expectations
 
+Planning reports should be short by default.
+
+Do not produce a long plan unless the task is complex or high risk, Karim asks for details, validation fails, unresolved issues remain, or the task touches security, database, auth, RLS, billing, credits, payments, deployment, or customer data.
+
+The default plan report should be practical and compact:
+
+```markdown
+## Short Plan Report
+
+- Task:
+- Scope:
+- Files/areas likely affected:
+- Main risk:
+- Validation:
+- Approval needed: Yes/No
+```
+
+Use the detailed planning format only when the task needs more detail.
+
 When planning is complete, report:
 
 - task restatement
