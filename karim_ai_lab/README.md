@@ -18,7 +18,8 @@ Its purpose is to give Codex, Claude, Antigravity, Kilo Code, and future coding 
 Asset 1 - Cross-agent entry strategy: complete.  
 Asset 2 - Core rules layer: complete.  
 Asset 3 - Project memory system skeleton: complete.  
-Asset 4 - Core Development Skills: complete.
+Asset 4 - Core Development Skills: complete.  
+Asset 5 - Initial Specialized Skills: complete.
 
 Current working folder:
 
@@ -34,7 +35,6 @@ Build and test the clean lab first.
 
 Then later:
 
-- Add specialized AI / RAG / automation / Shopify / content skills.
 - Add workflows.
 - Add templates.
 - Audit original ECC.
@@ -42,6 +42,7 @@ Then later:
 - Rewrite or ignore noisy parts.
 - Promote the final clean system.
 - Archive old ECC files before deleting anything.
+- Add optional future specialized skills only when needed.
 
 ## Agent Entry Files
 
@@ -75,12 +76,19 @@ Use indexes to avoid loading unnecessary files:
 - `karim_ai/skills/INDEX.md`
 
 Skills are optional execution playbooks, not mandatory rules.
+Rules override skills when they conflict.
+Memory is project truth; skills are execution guidance.
 
-Active skills section:
+Active skill sections:
 
 ```text
 karim_ai/skills/core_development/
+karim_ai/skills/ai_llm/
+karim_ai/skills/product_docs/
+karim_ai/skills/mcp_tooling/
 ```
+
+Future specialized skill sections should only be added when needed.
 
 ## Important Rule
 

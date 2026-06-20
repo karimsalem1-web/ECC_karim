@@ -12,14 +12,15 @@ Use this file to choose the correct guidance layer before working.
 Asset 1 - Cross-agent entry strategy: complete.  
 Asset 2 - Core rules layer: complete.  
 Asset 3 - Project memory system skeleton: complete.  
-Asset 4 - Core Development Skills: complete.
+Asset 4 - Core Development Skills: complete.  
+Asset 5 - Initial Specialized Skills: complete.
 
 Future assets will add:
 
-- specialized AI / RAG / automation / Shopify / content skills
 - workflows
 - templates
 - ECC extraction and cleanup
+- optional future specialized skills only when needed
 
 ## Main Files
 
@@ -142,22 +143,31 @@ Use this layer for optional execution playbooks.
 
 Skills are not mandatory rules.
 Use skills only when the task benefits from specialized execution guidance.
+Rules override skills when they conflict.
+Memory is project truth; skills are execution guidance.
 
-Active skills section:
+Active skill sections:
 
-```text
-skills/core_development/
-```
+- `core_development/`
+- `ai_llm/`
+- `product_docs/`
+- `mcp_tooling/`
 
-The 7 active core development skills are:
+Active specialized skill files:
 
-- `backend_service_patterns.md`
-- `frontend_ui_patterns.md`
-- `api_design.md`
-- `database_migrations.md`
-- `security_review.md`
-- `testing_verification.md`
-- `deployment_ops.md`
+AI / LLM:
+
+- `ai_llm/deterministic_vs_llm.md`
+- `ai_llm/llm_cost_optimization.md`
+- `ai_llm/rag_retrieval_patterns.md`
+
+Product Docs:
+
+- `product_docs/user_docs_and_guides.md`
+
+MCP Tooling:
+
+- `mcp_tooling/mcp_server_patterns.md`
 
 Skills answer:
 
@@ -219,6 +229,20 @@ karim_ai/
       security_review.md
       testing_verification.md
       deployment_ops.md
+
+    ai_llm/
+      INDEX.md
+      deterministic_vs_llm.md
+      llm_cost_optimization.md
+      rag_retrieval_patterns.md
+
+    product_docs/
+      INDEX.md
+      user_docs_and_guides.md
+
+    mcp_tooling/
+      INDEX.md
+      mcp_server_patterns.md
 ```
 
 ## Planned Future Tree
@@ -233,16 +257,7 @@ context/
 templates/
 ```
 
-Future specialized skill sections may include:
-
-```text
-AI / LLM / RAG
-automation
-Shopify / e-commerce
-content / research
-marketing
-data / analytics
-```
+Optional future specialized skill sections may be added only when needed.
 
 The tree is a working blueprint, not a prison.
 Small structure changes are allowed when they improve clarity, reduce noise, or match the project situation.
@@ -314,22 +329,28 @@ Project memory task:
 START_HERE.md -> INDEX.md -> memory/INDEX.md -> relevant memory file
 ```
 
-Skill-supported task:
+Core development skill-supported task:
 
 ```text
-START_HERE.md -> INDEX.md -> rules/INDEX.md -> relevant rule files -> skills/INDEX.md -> skills/core_development/INDEX.md -> one relevant skill file
+START_HERE.md -> INDEX.md -> rules/INDEX.md -> relevant rule files -> skills/INDEX.md -> skills/core_development/INDEX.md -> one relevant core development skill file
 ```
 
-Testing or verification task:
+AI/LLM task:
 
 ```text
-START_HERE.md -> INDEX.md -> rules/INDEX.md -> relevant rule files -> skills/INDEX.md -> skills/core_development/testing_verification.md
+START_HERE.md -> INDEX.md -> rules/INDEX.md -> relevant rule files -> memory/INDEX.md if needed -> skills/INDEX.md -> skills/ai_llm/INDEX.md -> relevant AI/LLM skill file
 ```
 
-Deployment readiness task:
+Product docs task:
 
 ```text
-START_HERE.md -> INDEX.md -> rules/INDEX.md -> rules/environment.md -> skills/INDEX.md -> skills/core_development/deployment_ops.md
+START_HERE.md -> INDEX.md -> memory/INDEX.md -> relevant memory files -> skills/INDEX.md -> skills/product_docs/INDEX.md -> skills/product_docs/user_docs_and_guides.md
+```
+
+MCP task:
+
+```text
+START_HERE.md -> INDEX.md -> rules/INDEX.md -> rules/security.md -> rules/environment.md -> skills/INDEX.md -> skills/mcp_tooling/INDEX.md -> skills/mcp_tooling/mcp_server_patterns.md
 ```
 
 ## Important Restrictions

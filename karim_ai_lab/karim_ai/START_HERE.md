@@ -31,13 +31,18 @@ Then choose the correct layer:
 - For technical coding rules, read `rules/INDEX.md`.
 - For project-specific memory, read `memory/INDEX.md`.
 - For optional execution playbooks, read `skills/INDEX.md`.
+- For AI/LLM work, read `skills/ai_llm/INDEX.md`.
+- For docs/help/guide work, read `skills/product_docs/INDEX.md`.
+- For MCP work, read `skills/mcp_tooling/INDEX.md`.
 - For future workflows, read the workflows index once it exists.
 
 Skills are optional execution playbooks, not mandatory rules.
+Rules override skills when they conflict.
 
 ## Token Optimization
 
 Do not load all files by default.
+Do not load all skills by default.
 
 Use this pattern:
 
@@ -74,7 +79,7 @@ START_HERE.md
 -> affected backend/database files
 ```
 
-Example for a task that uses skills:
+Example for a core development skill:
 
 ```text
 START_HERE.md
@@ -84,11 +89,47 @@ START_HERE.md
 -> memory/INDEX.md if project memory is needed
 -> skills/INDEX.md
 -> skills/core_development/INDEX.md
--> one relevant skill file
+-> one relevant core development skill file
 -> task files
 ```
 
-Do not load all skills by default.
+AI/LLM task:
+
+```text
+START_HERE.md
+-> INDEX.md
+-> rules/INDEX.md
+-> relevant rule files
+-> memory/INDEX.md if project context is needed
+-> skills/INDEX.md
+-> skills/ai_llm/INDEX.md
+-> relevant AI/LLM skill file
+```
+
+Product docs task:
+
+```text
+START_HERE.md
+-> INDEX.md
+-> memory/INDEX.md
+-> relevant memory files
+-> skills/INDEX.md
+-> skills/product_docs/INDEX.md
+-> product_docs/user_docs_and_guides.md
+```
+
+MCP task:
+
+```text
+START_HERE.md
+-> INDEX.md
+-> rules/INDEX.md
+-> rules/security.md
+-> rules/environment.md
+-> skills/INDEX.md
+-> skills/mcp_tooling/INDEX.md
+-> mcp_tooling/mcp_server_patterns.md
+```
 
 ## Do Not Assume
 
@@ -114,6 +155,7 @@ If unclear, ask Karim before editing.
 Asset 1 - Cross-agent entry strategy: complete.  
 Asset 2 - Core rules layer: complete.  
 Asset 3 - Project memory system skeleton: complete.  
-Asset 4 - Core Development Skills: complete.
+Asset 4 - Core Development Skills: complete.  
+Asset 5 - Initial Specialized Skills: complete.
 
-Future assets will add specialized skills, workflows, templates, and ECC extraction/cleanup.
+Future assets will add workflows, templates, and ECC extraction/cleanup.
