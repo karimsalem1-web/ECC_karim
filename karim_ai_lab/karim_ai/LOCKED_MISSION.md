@@ -1,17 +1,94 @@
 # Locked Mission
 
-Mission:
-Build one portable AI guidance folder that can be copied into any project and used by Codex, Claude, Antigravity, Kilo Code, and future LLM agents.
+Karim AI Lab is a portable AI guidance system for coding agents.
 
-Sources inspiration:
+Its mission is to create one clean source of truth that can be copied into any project and used by:
 
-* MASTER\_SKILL
-* youtuber skill
-* ECC architecture
+- Codex
+- Claude / Claude Code
+- Antigravity
+- Kilo Code
+- future AI agents
 
-Core principle:
-One source of truth. All agents use thin adapter files that point to the same shared instruction folder.
+## Final Goal
 
-Status:
-Asset 1 only. Full rules, skills, workflows, memory, and MCP structure will be added later after audit and restructure.
+One folder.
+One source of truth.
+Many agent entry files.
+Same mission, same rules, same memory, same workflows, same skills, and same project context.
 
+## Current Status
+
+Asset 1 - Cross-agent entry strategy: complete.  
+Asset 2 - Core rules layer: complete.
+
+The active lab folder is:
+
+```text
+karim_ai_lab/
+```
+
+The active internal guidance folder is:
+
+```text
+karim_ai_lab/karim_ai/
+```
+
+## What Is Already Active
+
+The system now includes:
+
+- shared agent entry strategy
+- locked mission
+- start-here flow
+- main index
+- core operating rules
+- technical rules layer
+
+The technical rules layer includes:
+
+```text
+karim_ai/rules/
+  architecture.md
+  security.md
+  database.md
+  frontend.md
+  backend.md
+  api_routes.md
+  naming.md
+  environment.md
+```
+
+## What Comes Later
+
+Future assets will add:
+
+- project memory system
+- skills system
+- workflows
+- templates
+- ECC extraction and cleanup
+- final promotion/rename strategy
+
+## Non-Negotiable Strategy
+
+Do not modify or delete original ECC files yet.
+
+Work inside:
+
+```text
+karim_ai_lab/
+```
+
+Only promote, archive, or delete old ECC material after the lab has been tested and Karim approves.
+
+## Inspiration Sources
+
+Karim AI Lab is inspired by:
+
+- Karim's master development rules
+- the workflow-builder skill structure
+- ECC's cross-agent architecture
+
+The goal is not to copy ECC blindly.
+The goal is to extract useful ideas and rebuild a smaller, cleaner, practical system.

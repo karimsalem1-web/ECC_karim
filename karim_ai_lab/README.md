@@ -1,9 +1,62 @@
 # Karim AI Lab
 
-This folder is an isolated lab for Karim's portable AI guidance system.
+Karim AI Lab is a clean, portable AI guidance system built inside the `ECC_karim` repo.
 
-It represents the future clean root structure. Existing ECC files outside this folder must remain untouched for now.
+Its purpose is to give Codex, Claude, Antigravity, Kilo Code, and future coding agents one shared source of truth for:
 
-Current phase: Asset 1 — Cross-agent entry strategy.
+- mission
+- entry instructions
+- core operating rules
+- technical rules
+- future project memory
+- future skills
+- future workflows
+- future templates
 
-The purpose is to make Codex, Claude, Antigravity, Kilo Code, and future LLM agents start from the same shared instruction source.
+## Current Status
+
+Asset 1 - Cross-agent entry strategy: complete.  
+Asset 2 - Core rules layer: complete.
+
+Current working folder:
+
+```text
+karim_ai_lab/
+```
+
+Original ECC files outside this folder are not modified yet.
+
+## Current Strategy
+
+Build and test the clean lab first.
+
+Then later:
+
+- Add the project memory system.
+- Add skills.
+- Add workflows.
+- Add templates.
+- Audit original ECC.
+- Keep useful ideas.
+- Rewrite or ignore noisy parts.
+- Promote the final clean system.
+- Archive old ECC files before deleting anything.
+
+## Agent Entry Files
+
+Different agents may start from different files:
+
+- `AGENTS.md`
+- `CLAUDE.md`
+- `ANTIGRAVITY.md`
+- `KILO.md`
+- `.codex/AGENTS.md`
+
+All entry files should point back to:
+
+- `karim_ai/START_HERE.md`
+- `karim_ai/INDEX.md`
+
+## Important Rule
+
+Do not modify original ECC files outside `karim_ai_lab` unless Karim explicitly approves it.
